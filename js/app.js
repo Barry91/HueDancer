@@ -8,10 +8,8 @@ $('document').ready(function(){
         localStorage["acceleroY"] 	= 0;
         localStorage["showwizard"] 	= 0;
     } 
-    else
-    {
-       
-    }	
+    //Not needed
+
 
     if(localStorage["showwizard"] == "no") {
     	$("div#startConnect").addClass("close");
@@ -188,6 +186,10 @@ $('document').ready(function(){
 		} // einde reloadButton
 		
 		function standardButtons() {
+			
+			
+			//Aint it possible to write a generic function for click events to prevent writing the same code twice?
+			
 			$('#btn7').click(function(e){
 				// btn7 = settings
 				e.preventDefault();	
@@ -297,7 +299,8 @@ $('document').ready(function(){
 		} // einde standardButtons
 		
 
-
+		//Same here, generic function?
+		
 		$('.bluedark').click(function() {
 			setColor("blue");
 		});
